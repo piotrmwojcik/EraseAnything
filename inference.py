@@ -62,9 +62,6 @@ if __name__ == "__main__":
         torch_dtype=torch.bfloat16
     )
 
-    # Load LoRA
-    if args.lora_path:
-        pipe.load_lora_weights(args.lora_path)
 
     pipe = pipe.to(device)
     pipe.set_progress_bar_config(disable=True)

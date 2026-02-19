@@ -93,7 +93,7 @@ if __name__ == "__main__":
         # 3️⃣ Call pipeline with embeds
         image = pipe(prompt=prompt,
                      # generator=generator,
-                     guidance_scale=3.0,
+                     guidance_scale=3.5,
                      height=512,
                      width=512,
                      num_inference_steps=28,

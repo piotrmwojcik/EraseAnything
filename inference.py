@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import os
-os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+#os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 
 import argparse
 import torch

@@ -62,7 +62,6 @@ if __name__ == "__main__":
         torch_dtype=torch.bfloat16
     )
 
-
     pipe = pipe.to(device)
     pipe.set_progress_bar_config(disable=True)
 
@@ -94,6 +93,7 @@ if __name__ == "__main__":
         # 3️⃣ Call pipeline with embeds
         image = pipe(prompt=prompt,
                      # generator=generator,
+                     guidance_scale=3.0,
                      height=512,
                      width=512,
                      num_inference_steps=28,
